@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Blog list</title>
+</head>
+<body>
+  <h1>{{ blogpost.title }}</h1>
+  {% for myimages_obj in myimages_objs %}
+    <img src='/{{ myimages_obj.image.url }}'>
+  {% endfor %}
+</body>
+
+</html>
